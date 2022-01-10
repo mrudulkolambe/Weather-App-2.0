@@ -162,8 +162,6 @@ searchLoaction.addEventListener('keydown', (e) => {
     }
 })
 
-menuToggle('search')
-
 
 const addToList = () => {
     if (searchArrayIterator >= 4) {
