@@ -114,6 +114,8 @@ async function searchQuery() {
     }
     addToList();
     showPosition(data);
+    query.value = "";
+    getList();
 }
 
 function chooseIcon(condition, page) {
@@ -177,6 +179,7 @@ const addToList = () => {
 }
 
 const getList = () => {
+    recent.innerHTML = '';
     let recentSearch = JSON.parse(localStorage.getItem('recent-searches'));
     console.log(recentSearch)
     if (recentSearch == null) {
